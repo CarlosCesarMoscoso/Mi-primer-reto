@@ -5,7 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table HTML</title>
 </head>
+<style>
+thead th
+        {
+            background-color: green;
+            color:white;
+            padding: 10px;
+        }
+tbody td
+        {
+            background: rgb(251,217 ,154) ;
+            padding: 10px;
+            color: #b92c00;
+            text-align: center;
+        }
+tfoot td
+        {
+            background-color: blue;
+            color: white;
+        }
+</style>
+
 <body>
+    <table cellpacing = "0" align="center" border="1" style="width: 100%;" >
+        <thead>
+            <tr>
+                <th>
+                    NOMBRE
+                </th>
+                <th>
+                    APELLIDO
+                </th>
+                <th>
+                    DNI
+                </th>
+                <th>
+                    TELEFONO
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>Carlos</td>
+            <td>Moscoso</td>
+            <td>42666868</td>
+            <td>974217637</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                 <td colspan="4" align="center">
+                    Derechos Reservados 
+                </td>
+            </tr>    
+        </tfoot>
+</table>
 </body>
 </html>
 

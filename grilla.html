@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRILLA</title>
+    <style>
+        .grid
+        {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 25%100px auto;
+        }
+
+        .grid div
+        {
+              background-color: red;  
+        }
+
+    </style>
+</head>
+<body>
+    <!----
+    <div clas="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    -->
+    <style>
+        .areas
+        {
+            display: grid;
+            font-weight: bold;
+            margin-top: 20px;
+            color: pink;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 120% 120% 120% 120%;
+            grid-template-areas: 
+                "header header header hedear"
+                "nav aside"
+                "footer footer footer";
+        }
+        
+        .header
+        {
+            grid-area: header;
+            background: red;    
+
+        }
+        .nav
+        {
+            grid-area: nav;
+            background:blue;    
+
+        }
+        .aside
+        {
+            grid-area: aside;
+            background: yellow;    
+
+        }
+        .footer
+        {
+            grid-area: footer;
+            background: blanchedalmond;    
+
+        }
+        .section
+        {
+            grid-area: section;
+            background: blanchedalmond;    
+        }
+
+
+    </style>
+
+    <div class ="areas">
+        <header class="header">header</header>
+        <nav class ="nav">nav</nav>
+        <aside class ="aside">aside</aside>
+        <section class ="section"> section</section>
+        <footer class = "footer">footer</footer>
+    </div>
+    
+</body>
+</html>
