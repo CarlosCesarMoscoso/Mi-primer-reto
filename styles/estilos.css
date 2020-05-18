@@ -1,0 +1,119 @@
+/*Selector por atributo*/
+
+a[href="https://google.com"]
+{
+    color: red;
+}
+
+a[href="https://facebook.com"]
+{
+    color: blank;
+}
+
+input[disabled]
+{
+    background: #cdcdcd;
+}
+
+/* Selector PorPseudoClase 
+Son estado de los elementos*/
+
+a:hover
+{
+    background:red;
+    color: yellow;
+    padding: 10px;
+}
+a:visited
+{
+    background: blueviolet;
+}
+/* Pesuclase */
+/*li:first-child
+{
+    background: red;
+}
+
+li:nth-child(2)
+{
+    background: skyblue;
+}
+li:nth-child(3)
+{
+    background: yellow;
+}
+li:last-child
+{
+    background:green;
+}
+*/
+/*Selectores Pseudoclases de posiciones*/
+/*Para hallar pares*/
+li:nth-child(even)
+{
+    background: greenyellow;
+}
+/*Para hallar los impares*/
+li:nth-child(odd)
+{
+    background: blueviolet;    
+}
+li:nth-child(1)
+{
+    background: grey;
+}
+
+/*Pseodoclase focus*/
+input:focus
+{
+    outline :none;
+    background-color: red;
+    color: white;
+}
+
+
+/*Pseudo Elementos*/
+p::first-letter
+{
+    font-size: 42px;
+}
+p::first-line
+{
+    background: red;
+}
+p::before
+{
+    content: '"';
+    font-size: 32px;
+    color:blueviolet
+}|
+p::after
+{
+    content: '"'
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
