@@ -3,13 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORNULARIO</title>
+    <style>
+        /*[disabled]
+        {
+          background-color: blue;      
+          color: cornsilk;
+
+        }*/
+       /* [readonly]
+        {
+          background-color: blue;      
+          color: cornsilk;
+        }*/
+        input:focus,
+        textarea:focus,
+        select:focus
+        {
+            outline :none;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="color"],
+        input[type="range"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"]
+        {
+            width: 300px;
+            padding: 10px;
+            transition: all .2s;
+            border: 1px solid black;
+        }
+        button
+        {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            cursor :pointer;
+        }
+        input:focus:invalid,
+        textarea:focus:invalid,
+        select:focus:invalid
+        {
+            border: 2px solid red;
+            box-shadow:  inset 4px -4px 7px 0px  red;
+        }
+        input:focus:valid,
+        select:focus:valid,
+        textarea:focus:valid
+        {
+            border: 1px solid blue;
+            box-shadow: 0 0 10px green;
+
+        }
+
+    </style>
 </head>
 <body>
-    <form method="POST">
-     <input type ="text" requeired placeholder="nombre">
-     <br/>
-     <input type ="submit" requeired placeholder="Enviar">
-    </form>   
+    <form method="POST" autocomplete="off" >
+    <label for="">Nombre</label>
+    <hr>
+    <input 
+       
+        name = "name" 
+        type ="text"
+        requeired placeholder="Ingresa tu Nombre" 
+        required />
+
+     <br/><br/>
+     <label for="">Enviar</label>
+     <hr/> 
+     <input name = "age" type ="submit" requeired placeholder="Enviar" required />
+     <br/><br/>
+     <label>Elige tu edad</label>
+     <hr/>
+     <input type ="number" requeired placeholder="Ingrese su edad" required min="18" max="64" />
+     <br/><br/>
+     <label for="" >Elige tu País</label>
+    <hr/>
+     <select name="country" id="" required>
+        <option value="">Seleccionar</option>
+        <option value="">Peú</option>
+        <option value="">Chile</option>
+        <option value="">Argentina</option>
+     </select>
+     <br/><br/>
+     <label for="">Elige tu Sexo</label>
+     <hr/>
+     <label for="f">F</label>
+     <input name ="sex" id="f" type="radio" checked />
+     <label for="m">M</label>
+     <input name ="sex" id ="m" type="radio" />
+     <br/><br/>
+     <label for="">Elige tus hobbies</label>
+     <hr/>
+     <label for="soccer">Futbol</label>
+     <input name = "hobies" id="soccer" type ="checkbox" checked/>
+     <label name = "hobies" for="voley">Voley</label>
+     <input name = "hobies"id="voley" type ="checkbox"/>
+     <label name = "hobies" for="tennis">Tennis</label>
+     <input name = "hobies" id="tennis" type ="checkbox"/>
+     <br/><br/>
+     <label name = "contraseña" for=""  >Contraseña</label>
+     <hr/>
+     <input type="password" required />
+     <br/><br/>
+     Color
+     <hr>
+    <input name = "color" type="color" required />
+    <br/><br/>
+    <label for="calendario"> Fecha </label> 
+    <hr/>
+    <input id="calendario" name = "fecha" type="date" required />
+    <br/><br/>
+    <label for="email">Correo </label>
+    <hr/>
+    <input id="email" name = "correo" type="email" required />
+    <br/><br/>
+    Rango
+    <hr/>
+    <input name = "rango" type="range" />
+    <br/><br/>
+    Ingresa una descripcion
+    <hr/>
+    <textarea name = "descripcion" cols="40"  rows="20" required> </textarea>
+    <hr/>
+    <button name "boton" type="submit">Enviar</input>
+
+    </form>
+
 </body>
 </html>
