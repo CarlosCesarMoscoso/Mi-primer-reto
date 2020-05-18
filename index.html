@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi portafolio</title>
+  <link rel="stylesheet" href ="./styles/main.css">
+
+
 </head>
 
 <body>
   <main>
     <!--BANNER-->
-    <section>
+    <section class ="banner">
       <img src="./images/banner.png" alt="Mi imagen personal" />
       <h1>codiGo</h1>
       <h2>Hola, mi nombre es Carlos Moscoso </h2>
     </section>
     <!--MY SKILLS-->
-    <section>
+    <section class="my-skills">
       <h2>My skills</h2>
       <div>
         <div>
@@ -78,7 +80,7 @@
       </div>
     </section>
     <!--SERVICIOS-->
-    <Section>
+    <Section class="servicios">
       <H2>Servicios</H2>
       <div>
         <div>
@@ -108,7 +110,7 @@
       </div>
     </Section>
     <!--PORTAFOLIO-->
-    <section>
+    <section class="portafolio">
       <h2>Portafolio</h2>
       <div>
         <img src="./images/1.png" alt="Proyecto nro. 1 ">
@@ -122,7 +124,7 @@
       </div>
     </section>
     <!--CLIENTS-->
-    <section>
+    <section class="clientes">
       <h2>Clients</h2>
       <div>
           <img src="./images/A.png" alt="Proyecto Cliente Uno">
@@ -132,14 +134,14 @@
       </div>
     </section>
     <!--CONTAC-->
-    <Section>
+    <Section class="contactos">
       <H2>Contacto</H2>
       <form action="">
-        <input type="text" placeholder="Nombre" />
-        <input type="text" placeholder="Apellido" />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Teléfono" />
-        <textarea rows="10" cols="50">Descripción </textarea>
+        <input type="text" placeholder="Nombre"   required maxlength="15" />
+        <input type="text" placeholder="Apellido" required maxlength="15"/>
+        <input type="email" placeholder="Email"   required  />
+        <input type="text" placeholder="Teléfono" required minlength="9" />
+        <textarea rows="10" cols="50" required >Descripción </textarea>
         <button>ENVIAR</button>    
         
       </form>
